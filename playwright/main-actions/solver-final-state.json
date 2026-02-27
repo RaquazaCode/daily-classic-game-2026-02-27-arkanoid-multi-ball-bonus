@@ -1,0 +1,26 @@
+{
+  "mode": "ready",
+  "coordinateSystem": "origin: top-left, +x right, +y down, units: pixels",
+  "score": 0,
+  "highScore": 64,
+  "lives": 3,
+  "combo": 0,
+  "ballsInPlay": 1,
+  "paddle": {
+    "x": 405,
+    "y": 588,
+    "width": 150,
+    "height": 18
+  },
+  "balls": [
+    {
+      "id": "primary",
+      "x": 480,
+      "y": 579,
+      "vx": 210,
+      "vy": -280
+    }
+  ],
+  "bricksRemaining": 40,
+  "message": "Press Space to launch."
+}

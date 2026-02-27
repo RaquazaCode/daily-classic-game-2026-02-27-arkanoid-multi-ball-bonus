@@ -1,0 +1,9 @@
+{
+  "multiBallTriggered": true,
+  "scoreAfterChain": 64,
+  "pausedMode": "paused",
+  "resumedMode": "running",
+  "resetMode": "ready",
+  "resetBallsInPlay": 1,
+  "coordinateSystem": "origin: top-left, +x right, +y down, units: pixels"
+}
