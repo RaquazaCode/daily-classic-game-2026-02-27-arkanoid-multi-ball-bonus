@@ -1,18 +1,146 @@
 :root {
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  color: #d6efff;
-  background: radial-gradient(circle at top, #143357 0%, #08131f 70%);
+  color: #e8f6ff;
+  background: radial-gradient(circle at top, #224f7d 0%, #0a111a 70%);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   min-height: 100vh;
+  background: radial-gradient(circle at 20% 0%, #2a5f92 0%, #08131d 62%);
 }
 
 .shell {
-  max-width: 900px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.4rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: #8ec5f4;
+}
+
+.hero h1 {
+  margin: 0.35rem 0;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+}
+
+.hero p {
+  margin: 0;
+  color: #cae8ff;
+}
+
+.board-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 960px) minmax(280px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+#game-canvas {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(176, 231, 255, 0.42);
+  box-shadow: 0 26px 45px rgba(2, 6, 12, 0.56);
+  background: #0f1722;
+}
+
+.panel {
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgba(8, 18, 29, 0.78);
+  border: 1px solid rgba(162, 220, 255, 0.28);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.stats article {
+  border-radius: 12px;
+  padding: 0.5rem 0.6rem;
+  background: rgba(61, 139, 201, 0.18);
+}
+
+.stats span {
+  display: block;
+  color: #9cc5e6;
+  font-size: 0.8rem;
+}
+
+.stats strong {
+  font-size: 1.4rem;
+}
+
+.chip {
+  display: inline-block;
+  margin: 0.95rem 0 0.55rem;
+  padding: 0.36rem 0.68rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(123, 197, 255, 0.2);
+}
+
+.message {
+  min-height: 2.7rem;
+  margin: 0;
+  color: #cce6ff;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+  color: #09203a;
+  font-weight: 700;
+  background: linear-gradient(180deg, #c0ecff, #77c8ec);
+  cursor: pointer;
+}
+
+.legend {
+  margin: 0.95rem 0 0;
+  padding-left: 1.1rem;
+  color: #c5e4fa;
+}
+
+.legend li {
+  margin: 0.3rem 0;
+}
+
+kbd {
+  border-radius: 6px;
+  border: 1px solid rgba(185, 227, 255, 0.5);
+  padding: 0.1rem 0.3rem;
+  font-size: 0.8rem;
+  margin-right: 0.26rem;
+}
+
+@media (max-width: 1120px) {
+  .board-wrap {
+    grid-template-columns: 1fr;
+  }
 }
